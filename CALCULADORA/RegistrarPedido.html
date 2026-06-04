@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="EstiloRegistrarPedido.css">
+</head>
+<body>
+    <div class="container">
+
+    <h1>Bienvenido al modulo de registro de producto</h1>
+
+    <br>
+
+    <p>Ingrese el nombre del producto</p>
+    <input type="text" size="50"></input>
+    
+    <br>
+
+    <p>Disponibilidad</p>
+    <select name="disponibilidad" id="selectorDisponibilidad">
+        <option value="Disponible">Disponible</option>
+        <option value="No disponible">No disponible</option>
+    </select>
+
+    <br>
+
+    <p>Selecciona la categoria</p>
+    <select name="disponibilidad" id="selectorDisponibilidad">
+        <option value="">Seleccione una opcion</option>
+        <option value="Agricultura">Agricultura</option>
+        <option value="Apicultura">Apicultura</option>
+        <option value="Artesania">Artesania</option>
+    </select>
+
+    <br>
+
+    <p>Ingresa la cantidad del producto</p>
+    <input type="number" id="Cantidad" value="0">
+
+    <br>
+
+    <p>Precio por unidad $</p>
+    <input type="number" id="precio" value="0">
+
+    <br>
+
+    <p>Ingrese una breve descripcion</p>
+    <input type="tex" id="descripcion" size="40" maxlength="100">
+
+    <br>
+
+    <p>Ingrese la imagen del producto</p>
+    <input type="image" id="Imagen">
+    <button class="cargar">Agregar Imagen</button>
+
+    <br><br>
+
+    <div class="button-group">
+    <button class="btn-publish">Publicar Producto</button>
+    <button class="btn-cancel">Cancelar o Regresar</button>
+    </div>
+
+    </div>
+    
+</body>
+</html>

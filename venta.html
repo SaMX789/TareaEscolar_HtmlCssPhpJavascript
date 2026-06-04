@@ -1,0 +1,94 @@
+
+<head>
+    
+    <title>Simulador de Venta</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 20px; }
+        .producto { border: 1px solid #ccc; padding: 10px; margin: 10px; display: inline-block; width: 150px; }
+        #carrito { margin-top: 30px; border-top: 2px solid #000; padding-top: 10px; }
+    </style>
+</head>
+<body>
+    <a href="Samuel.html">Ir a la página PRINCIPAL</a>
+
+    <h1>Tienda Simple</h1>
+
+    <div class="producto">
+        <h3>CEVICHE</h3>
+        <p>Precio: $150</p>
+        <button onclick="agregarAlCarrito('CEVICHE', 150)">Agregar</button>
+    </div>
+
+    <div class="producto">
+        <h3>FRIJOL CON PUERCO</h3>
+        <p>Precio: $100</p>
+        <button onclick="agregarAlCarrito('FRIJOL CON PUERCO', 100)">Agregar</button>
+    </div>
+
+    <div class="producto">
+        <h3>POC CHUC</h3>
+        <p>Precio: $90</p>
+        <button onclick="agregarAlCarrito('POC CHUC', 90)">Agregar</button>
+    </div>
+
+    <div class="producto">
+        <h3>DULCE</h3>
+        <p>Precio: $20</p>
+        <button onclick="agregarAlCarrito('DULCE', 20)">Agregar</button>
+    </div>
+
+    <div class="producto">
+        <h3>TORTA</h3>
+        <p>Precio: $50</p>
+        <button onclick="agregarAlCarrito('TORTA', 50)">Agregar</button>
+    </div>
+
+    <div class="producto">
+        <h3>POTAJE DE LENTEJAS</h3>
+        <p>Precio: $99</p>
+        <button onclick="agregarAlCarrito('POTAJE DE LENTEJAS', 99)">Agregar</button>
+    </div>
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-articulos">
+            </ul>
+        <p><strong>Total: $<span id="total">0</span></strong></p>
+        <button onclick="finalizarVenta()">Finalizar Venta</button>
+        <button onclick="vaciarCarrito()" style="background-color: #ffcccc;">Vaciar</button>
+    </div>
+
+    <script>
+        let totalCuenta = 0;
+        const listaUI = document.getElementById('lista-articulos');
+        const totalUI = document.getElementById('total');
+
+        function agregarAlCarrito(nombre, precio) {
+            // Crear el elemento en la lista
+            let item = document.createElement('li');
+            item.textContent = `${nombre} - $${precio}`;
+            listaUI.appendChild(item);
+
+            // Sumar al total
+            totalCuenta += precio;
+            totalUI.textContent = totalCuenta;
+        }
+
+        function vaciarCarrito() {
+            totalCuenta = 0;
+            totalUI.textContent = totalCuenta;
+            listaUI.innerHTML = "";
+        }
+
+        function finalizarVenta() {
+            if (totalCuenta > 0) {
+                alert("¡Venta realizada con éxito!\nTotal cobrado: $" + totalCuenta);
+                vaciarCarrito();
+            } else {
+                alert("El carrito está vacío.");
+            }
+        }
+    </script>
+
+</body>
+</html>

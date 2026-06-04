@@ -1,0 +1,52 @@
+/* estilos.css */
+
+/* 1. Fuente limpia y espacio en la pantalla */
+body {
+    font-family: sans-serif;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 2. Botones para tus enlaces de navegación */
+a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px 2px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+a:hover {
+    background: #0056b3;
+}
+
+/* 3. Tablas ordenadas (quita el border="1" visualmente) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 40px 0;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* 4. Títulos más estéticos */
+h1 {
+    font-size: 22px;
+    margin-top: 30px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}

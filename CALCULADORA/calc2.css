@@ -1,0 +1,93 @@
+/* Configuración general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f7f6;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la tabla (el contenedor) */
+table {
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: none; /* Quitamos el borde tosco de la tabla */
+    padding: 10px;
+}
+
+/* La pantalla de la calculadora */
+#pantalla {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background-color: #eee;
+    border-radius: 10px;
+    color: #333;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+/* Estilo general de los botones */
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+/* Efecto al pasar el ratón */
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Efecto al hacer clic */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Botones de operación (colores distintos) */
+button[onclick*="agregar('/')"], 
+button[onclick*="agregar('*')"], 
+button[onclick*="agregar('-')"], 
+button[onclick*="agregar('+')"] {
+    background-color: #e3f2fd;
+    color: #2196f3;
+}
+
+/* Botón de limpiar */
+button[onclick="limpiar()"] {
+    background-color: #ffebee;
+    color: #f44336;
+}
+
+/* Botón de igual */
+button[onclick="calcular()"] {
+    background-color: #2196f3;
+    color: white;
+    height: 100%; /* Para que llene las filas del rowspan */
+}
+
+/* Ajuste para el botón 0 largo y el botón igual */
+button[onclick*="0"] {
+    width: 130px;
+}

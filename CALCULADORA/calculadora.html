@@ -1,0 +1,52 @@
+
+<html>
+<head>
+
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="calc2.css">
+</head>
+<body>
+
+    <h1>Calculadora</h1>
+    
+    
+    <!-- AUTOR SAMUEL ELIAS MENA LOEZA 8AVS-->
+    <br><br>
+
+    <table border="2">
+        <TR >
+            <TD colspan="4"><input type="text" id="pantalla" readonly></TD>
+        </TR>
+        <tr>
+            <td><button onclick="limpiar()">C</button></td>
+            <td><button onclick="agregar('/')">/</button></td>
+            <td><button onclick="agregar('*')">*</button></td>
+            <td><button onclick="agregar('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="agregar('7')">7</button></td>
+            <td><button onclick="agregar('8')">8</button></td>
+            <td><button onclick="agregar('9')">9</button></td>
+            <td rowspan="2"><button onclick="agregar('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="agregar('4')">4</button></td>
+            <td><button onclick="agregar('5')">5</button></td>
+            <td><button onclick="agregar('6')">6</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="agregar('1')">1</button></td>
+            <td><button onclick="agregar('2')">2</button></td>
+            <td><button onclick="agregar('3')">3</button></td>
+            <td rowspan="2"><button onclick="calcular()">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="agregar('0')">0</button></td>
+            <td><button onclick="agregar('.')">.</button></td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

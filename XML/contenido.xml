@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+    <producto>
+        <codigo>001</codigo>
+        <nombre>COCA COLA</nombre>
+        <descripcion>Refresco de cola de 355 ml, listo para servirse frío.</descripcion>
+        <precio>12.50</precio>
+        <categoria>Bebidas</categoria>
+        <disponibilidad>En stock</disponibilidad>
+        <imagen>coca.jpg</imagen>
+    </producto>
+
+    <producto>
+        <codigo>002</codigo>
+        <nombre>PEPSI</nombre>
+        <descripcion>Refresco de cola con perfil dulce y burbujeante, lata 355 ml.</descripcion>
+        <precio>13.00</precio>
+        <categoria>Bebidas</categoria>
+        <disponibilidad>En stock</disponibilidad>
+        <imagen>pepsi.jpg</imagen>
+    </producto>
+
+    <producto>
+        <codigo>003</codigo>
+        <nombre>CHARITOS</nombre>
+        <descripcion>Botana crujiente de maíz con sabor a queso para compartir.</descripcion>
+        <precio>18.75</precio>
+        <categoria>Snacks</categoria>
+        <disponibilidad>En stock</disponibilidad>
+        <imagen>charitos.jpg</imagen>
+    </producto>
+
+    <producto>
+        <codigo>004</codigo>
+        <nombre>CEVICHE</nombre>
+        <descripcion>Porción de ceviche de camarón con limón, jitomate y cilantro.</descripcion>
+        <precio>55.00</precio>
+        <categoria>Comida preparada</categoria>
+        <disponibilidad>En stock</disponibilidad>
+        <imagen>ceviche.jpg</imagen>
+    </producto>
+
+    <producto>
+        <codigo>005</codigo>
+        <nombre>FABULOSO</nombre>
+        <descripcion>Limpiador líquido aroma lavanda para múltiples superficies.</descripcion>
+        <precio>30.00</precio>
+        <categoria>Limpieza</categoria>
+        <disponibilidad>AGOTADO</disponibilidad>
+        <imagen>fabuloso.jpg</imagen>
+    </producto>
+</productos>
